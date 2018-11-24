@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="520.0" prefWidth="713.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
+	<top>
+		<BorderPane prefHeight="39.0" prefWidth="713.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets bottom="10.0" />
+			</BorderPane.margin>
+		</BorderPane>
+	</top>
+	<bottom>
+		<VBox prefHeight="60.0" prefWidth="676.0" BorderPane.alignment="CENTER">
+			<children>
+				<HBox prefHeight="65.0" prefWidth="676.0">
+					<children>
+						<Button id="Library" fx:id="Library" alignment="CENTER" mnemonicParsing="false" onAction="#handlerButtonAction" prefHeight="40.0" prefWidth="30.0" stylesheets="@application.css">
+							<HBox.margin>
+								<Insets bottom="1.0" left="40.0" right="10.0" top="5.0" />
+							</HBox.margin>
+							<padding>
+								<Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+							</padding>
+						</Button>
+						<Button id="Stop" fx:id="Stop" mnemonicParsing="false" onAction="#stopButton" prefHeight="48.0" prefWidth="46.0" stylesheets="@application.css">
+							<padding>
+								<Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+							</padding>
+							<HBox.margin>
+								<Insets top="5.0" />
+							</HBox.margin>
+						</Button>
+						<Button id="Prev" fx:id="Prev" mnemonicParsing="false" prefHeight="48.0" prefWidth="49.0" stylesheets="@application.css">
+							<HBox.margin>
+								<Insets bottom="1.0" left="10.0" right="1.0" top="5.0" />
+							</HBox.margin>
+							<padding>
+								<Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+							</padding>
+						</Button>
+						<Button id="Play" fx:id="Play" mnemonicParsing="false" onAction="#playButton" prefHeight="47.0" prefWidth="50.0" stylesheets="@application.css">
+							<HBox.margin>
+								<Insets left="10.0" top="5.0" />
+							</HBox.margin>
+							<padding>
+								<Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+						</Button>
+						<Button id="Next" fx:id="Next" mnemonicParsing="false" prefHeight="47.0" prefWidth="48.0" stylesheets="@application.css">
+							<HBox.margin>
+								<Insets left="10.0" top="5.0" />
+							</HBox.margin>
+							<padding>
+								<Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+						</Button>
+						<Button id="repeat" fx:id="repeat" mnemonicParsing="false" prefHeight="47.0" prefWidth="51.0" stylesheets="@application.css">
+							<HBox.margin>
+								<Insets left="10.0" top="5.0" />
+							</HBox.margin>
+							<padding>
+								<Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+							</padding>
+						</Button>
+						<HBox prefHeight="60.0" prefWidth="268.0">
+							<children>
+								<StackPane prefHeight="60.0" prefWidth="63.0">
+									<children>
+										<Pane id="Speaker" prefHeight="39.0" prefWidth="63.0" stylesheets="@application.css" />
+									</children>
+								</StackPane>
+								<StackPane prefHeight="60.0" prefWidth="207.0">
+									<children>
+										<Region prefHeight="200.0" prefWidth="200.0" />
+										<Slider prefHeight="14.0" prefWidth="184.0" />
+									</children>
+								</StackPane>
+							</children>
+						</HBox>
+					</children>
+				</HBox>
+			</children>
+		</VBox>
+	</bottom>
+	<center>
+		<StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<MediaView fx:id="mediaShow" fitHeight="350.0" fitWidth="400.0">
+               <StackPane.margin>
+                  <Insets left="200.0" />
+               </StackPane.margin></MediaView>
+				<BorderPane prefHeight="412.0" prefWidth="713.0">
+					<left>
+						<VBox id="OptionLeft" prefHeight="385.0" prefWidth="184.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+							<children>
+								<HBox prefHeight="45.0" prefWidth="188.0">
+									<children>
+										<TextField prefHeight="32.0" prefWidth="180.0">
+											<HBox.margin>
+												<Insets left="10.0" right="10.0" />
+											</HBox.margin>
+										</TextField>
+									</children>
+								</HBox>
+								<HBox prefHeight="67.0" prefWidth="188.0">
+									<children>
+										<Pane fx:id="artist" prefHeight="40.0" prefWidth="71.0" stylesheets="@application.css">
+											<HBox.margin>
+												<Insets left="10.0" />
+											</HBox.margin>
+										</Pane>
+										<Label prefHeight="69.0" prefWidth="85.0" text="    Artist">
+											<font>
+												<Font name="System Bold" size="17.0" />
+											</font>
+										</Label>
+									</children>
+								</HBox>
+								<HBox prefHeight="70.0" prefWidth="188.0">
+									<children>
+										<Pane id="Albums" prefHeight="70.0" prefWidth="79.0" stylesheets="@application.css">
+											<HBox.margin>
+												<Insets left="5.0" />
+											</HBox.margin>
+										</Pane>
+										<Label prefHeight="64.0" prefWidth="71.0" text="  Album">
+											<font>
+												<Font name="System Bold" size="17.0" />
+											</font>
+										</Label>
+									</children>
+								</HBox>
+								<HBox prefHeight="68.0" prefWidth="188.0">
+									<children>
+										<Pane id="Songs" prefHeight="68.0" prefWidth="80.0" stylesheets="@application.css">
+											<HBox.margin>
+												<Insets />
+											</HBox.margin>
+										</Pane>
+										<Label prefHeight="67.0" prefWidth="71.0" text="  Songs">
+											<font>
+												<Font name="System Bold" size="18.0" />
+											</font>
+										</Label>
+									</children>
+								</HBox>
+								<Separator prefWidth="200.0" />
+								<HBox prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<Pane prefHeight="113.0" prefWidth="184.0">
+											<HBox.margin>
+												<Insets top="5.0" />
+											</HBox.margin>
+										</Pane>
+									</children>
+								</HBox>
+							</children>
+							<BorderPane.margin>
+								<Insets />
+							</BorderPane.margin>
+						</VBox>
+					</left>
+					<center>
+						<VBox id="backgroundCenter" prefHeight="385.0" prefWidth="494.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+							<BorderPane.margin>
+								<Insets />
+							</BorderPane.margin>
+						</VBox>
+					</center>
+					<bottom>
+						<VBox prefHeight="12.0" prefWidth="676.0" BorderPane.alignment="CENTER">
+							<children>
+                        <Slider prefHeight="14.0" prefWidth="0.0">
+                           <VBox.margin>
+                              <Insets left="5.0" />
+                           </VBox.margin></Slider>
+							</children>
+						</VBox>
+					</bottom>
+					<StackPane.margin>
+						<Insets />
+					</StackPane.margin>
+				</BorderPane>
+			</children>
+		</StackPane>
+	</center>
+</BorderPane>

@@ -1,0 +1,101 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#artist{
+	 -fx-background-image: url("../image/artist.png");
+	  -fx-background-size:  70 70;    
+	 -fx-background-repeat: no-repeat;
+     -fx-background-position: center;
+     -fx-background-color: transparent;
+  
+}
+#Albums{
+	-fx-background-image: url("../image/Album.png");
+    -fx-background-size:  55 55;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#Songs{
+	-fx-background-image: url("../image/Songs.png");
+    -fx-background-size:  55 55 ;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+
+#Prev{
+	-fx-background-image: url("../image/prev.png");
+    -fx-background-size:  40 40;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#Prev:hover{
+    -fx-opacity: 0.25;
+}
+
+
+#Play{
+	-fx-background-image: url("../image/play.png");
+    -fx-background-size:  40 40;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#Play:hover{
+    -fx-opacity: 0.25;
+}
+#Next{
+	-fx-background-image: url("../image/next.png");
+    -fx-background-size:  40 40;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#Next:hover{
+    -fx-opacity: 0.25;
+}
+#repeat{
+	-fx-background-image: url("../image/repeat.png");
+    -fx-background-size:  25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#repeat:hover{
+    -fx-opacity: 0.25;
+}
+#Speaker{
+	-fx-background-image: url("../image/speaker.png");
+    -fx-background-size:  33 33;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#Speaker:hover{
+    -fx-opacity: 0.25;
+}
+#Stop{
+	-fx-background-image: url("../image/stop.png");
+    -fx-background-size:  25 25;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#Stop:hover{
+    -fx-opacity: 0.25;
+}
+#Library{
+	-fx-background-image: url("../image/libray.png");
+    -fx-background-size:  33 33;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+}
+#Library:hover{
+    -fx-opacity: 0.25;
+}
+#backgroundCenter{
+	-fx-border-width: 1 1 1 1;
+	-fx-border-color:ffffff;
+	
+}
