@@ -183,7 +183,11 @@
                      <children>
                         <AnchorPane id="showSongs" fx:id="Songs" prefHeight="414.0" prefWidth="527.0">
                            <children>
-                              <TextArea fx:id="listSong" layoutY="3.0" prefHeight="388.0" prefWidth="522.0" visible="false" />
+                              <ScrollPane fx:id="scrollPane" layoutY="1.0" prefHeight="390.0" prefWidth="525.0" visible="false">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                </content>
+                              </ScrollPane>
                            </children></AnchorPane>
                      </children>
 						</VBox>
