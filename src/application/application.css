@@ -14,13 +14,6 @@
     -fx-background-position: center;
     -fx-background-color: transparent;
 }
-#Songs{
-	-fx-background-image: url("../image/Songs.png");
-    -fx-background-size:  55 55 ;
-    -fx-background-repeat: no-repeat;
-    -fx-background-position: center;
-    -fx-background-color: transparent;
-}
 
 #Prev{
 	-fx-background-image: url("../image/prev.png");
@@ -98,4 +91,11 @@
 	-fx-border-width: 1 1 1 1;
 	-fx-border-color:ffffff;
 	
+}
+#song{
+	-fx-background-image: url("../image/Songs.png");
+    -fx-background-size:  55 55 ;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
 }

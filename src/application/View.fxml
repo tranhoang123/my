@@ -139,14 +139,17 @@
 										</Label>
 									</children>
 								</HBox>
-								<HBox prefHeight="68.0" prefWidth="188.0">
+								<HBox onMouseClicked="#viewSong" prefHeight="68.0" prefWidth="188.0">
 									<children>
-										<Pane id="Songs" prefHeight="68.0" prefWidth="80.0" stylesheets="@application.css">
+										<Pane id="Songs" fx:id="allSong" prefHeight="68.0" prefWidth="80.0" stylesheets="@application.css">
 											<HBox.margin>
 												<Insets />
 											</HBox.margin>
+                                 <children>
+                                    <Button fx:id="song" layoutX="2.0" layoutY="3.0" mnemonicParsing="false" onAction="#showSong" prefHeight="65.0" prefWidth="74.0" />
+                                 </children>
 										</Pane>
-										<Label prefHeight="67.0" prefWidth="71.0" text="  Songs">
+										<Label prefHeight="67.0" prefWidth="89.0" text="  Songs">
 											<font>
 												<Font name="System Bold" size="18.0" />
 											</font>
@@ -160,6 +163,9 @@
 											<HBox.margin>
 												<Insets top="5.0" />
 											</HBox.margin>
+                                 <children>
+                                    <Button fx:id="folder" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#choseFolder" prefHeight="25.0" prefWidth="124.0" text="Folder" />
+                                 </children>
 										</Pane>
 									</children>
 								</HBox>
@@ -170,10 +176,16 @@
 						</VBox>
 					</left>
 					<center>
-						<VBox id="backgroundCenter" prefHeight="385.0" prefWidth="494.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+						<VBox id="backgroundCenter" prefHeight="395.0" prefWidth="499.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
 							<BorderPane.margin>
 								<Insets />
 							</BorderPane.margin>
+                     <children>
+                        <AnchorPane id="showSongs" fx:id="Songs" prefHeight="414.0" prefWidth="527.0">
+                           <children>
+                              <TextArea fx:id="listSong" layoutY="3.0" prefHeight="388.0" prefWidth="522.0" visible="false" />
+                           </children></AnchorPane>
+                     </children>
 						</VBox>
 					</center>
 					<bottom>
